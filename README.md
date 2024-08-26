@@ -29,7 +29,7 @@ go build -v -a -tags netgo -o release/linux/amd64/drone-heroku ./cmd/drone-herok
 
 ## Docker
 
-Build the Docker images with the following commandsss:
+Build the Docker images with the following commandssss:
 
 ```console
 docker build \
