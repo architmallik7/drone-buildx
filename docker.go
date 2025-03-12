@@ -582,9 +582,9 @@ func commandBuildx(build Build, builder Builder, dryrun bool, metadataFile strin
 	} else {
 		args = append(args, "--push")
 	}
-	// if len(build.BuildxOptions) > 0 {
-	// 	args = append(args, build.BuildxOptions...)
-	// }
+	if len(build.BuildxOptions) > 0 {
+		args = append(args, build.BuildxOptions...)
+	}
 	args = append(args, build.Context)
 	if metadataFile != "" {
 		args = append(args, "--metadata-file", metadataFile)
