@@ -598,7 +598,6 @@ func commandBuildx(build Build, builder Builder, dryrun bool, metadataFile strin
 	if build.Pull {
 		args = append(args, "--pull=true")
 	}
-	args = append(args, "--provenance=false")
 	if build.NoCache {
 		args = append(args, "--no-cache")
 	}
